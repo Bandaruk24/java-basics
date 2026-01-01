@@ -11,3 +11,4 @@ public class ScannerFunction {
             System.out.println("An error occurred: " + e.getMessage());
     }
 }
+}
