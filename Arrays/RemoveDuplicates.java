@@ -20,7 +20,6 @@ public class RemoveDuplicates {
         }
         // Sorting the array using Array.sort() method(Optional)
         //Arrays.sort(numbers);
-
         // Printing sorted array
         System.out.println("Sorted array:");
         for(int i=0;i<numbers.length;i++){
