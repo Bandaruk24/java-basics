@@ -24,7 +24,6 @@ public class ReverseAString {
         System.out.println("Reversed String using StringBuilder: "+reversedString2);
         
         // Method 3: Using char array (Best for performance)
-        
         char[] charArray = str.toCharArray();
         int left=0;
         int right=charArray.length-1;
