@@ -12,6 +12,7 @@ public class CustomExceptionExample {
             throw new InvalidAgeException("Age must be 18 or above");
         } else {
             System.out.println("Access granted");
+            
         }
     }
 
