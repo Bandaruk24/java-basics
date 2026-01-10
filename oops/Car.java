@@ -1,4 +1,4 @@
-package oops;
+package oops
 public class Car {
     // Attributes of the Car class
     String color;
