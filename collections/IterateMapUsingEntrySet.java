@@ -14,5 +14,6 @@ public class IterateMapUsingEntrySet {
         for(Map.Entry<Integer,String> entry:map.entrySet()){
             System.out.println("Key: "+entry.getKey()+", Value: "+entry.getValue());
         }
+        
     }
 }
