@@ -6,18 +6,28 @@ import javax.sound.sampled.Line;
 
 public class CountLinesAndWordsInFile {
     public static void main(String[] args) {
+        // Variables to store totals
         int lineCount = 0;
         int wordCount = 0;
         
         try(BufferedReader br = new BufferedReader( new FileReader("example.txt"))){
             String line;
+            // Reads one line at a time
+            // null → End of file
+            while ((line = br.readLine()) != null) {
+            // Each readLine() means one line
+            lineCount++;
 
-            while((line = br.readLine())!=null){
-                lineCount++;
-                // Split line into words
-                String[] word = line.trim().split("\\s+");
-                wordCount+=word.length;
+            line = line.trim();
+            // If file contains empty lines, avoid counting them as words:
+            if (!line.isEmpty()) {
+                // trim() → removes extra spaces
+                // \\s+ → splits by one or more spaces
+                // words.length → number of words in that line
+            wordCount += line.split("\\s+").length;
             }
+        }
+            // Printing the lines and words. 
             System.out.println("Number of lines: "+ lineCount);
             System.out.println("Number of Words: "+ wordCount);
         }
