@@ -17,5 +17,8 @@ public class LambdaExpressions {
         //List Creation using lambda functions
         List<String> names = Arrays.asList("Karthik","Kumar","Bandaru");
         names.forEach(name->System.out.println(name));
+        //Sorting the elements based on the alphabetic order.
+        Collections.sort(names, (a, b) -> a.compareTo(b));
+        System.out.println(names);
     };
 }
