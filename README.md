@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Java Programming – Core to Advanced
 
 This repository contains my **complete Core Java learning journey**, structured topic-wise with clear explanations, examples, and a mini project.  
@@ -106,3 +107,4 @@ It is designed for **beginners, interview preparation, and practical understandi
 ## Author
 **Bandaru Karthik Kumar**  
 Aspiring Java Backend Developer
+=======
